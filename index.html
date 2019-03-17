@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+   <script src="jquery.js" charset="utf-8"></script>
+   <script type="text/javascript">
+
+     $(function() {
+       $("div").each(function(index) {
+         let width  = Math.round(Math.random() * 0) + 600
+         let r = Math.floor(Math.random() * 100)
+         let g = Math.floor(Math.random() * 100)
+         let b = Math.floor(Math.random() * 100)
+         let color = [r, g, b].join()
+         $(this).css({
+           "width":  width + "px",
+           "background-color": "rgb(" + color + ")"
+         })
+         $(this).on("mouseenter", function() {
+           let width  = Math.round(Math.random() * 0)
+           $(this).css({
+             "width":  width + "px"
+           })
+         })
+       })
+     })
+
+
+
+
+   </script>
+  </head>
+  <body>
+    <h1>МЕНЬШЕ ЗНАЧИТ БОЛЬШЕ</h1>
+    <section class="first">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </section>
+
+    <section class="second">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </section>
+
+    <section class="third">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </section>
+
+
+  </body>
+</html>
